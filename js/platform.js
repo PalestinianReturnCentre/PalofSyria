@@ -1391,7 +1391,9 @@
                 var dayMonthFormat = d3.time.format("%d/%m/%y");
                 var _fullDateFormat = d3.time.format("%A, %d %B %Y");
                 var fullDateFormat = function(d) {
-                    console.log(d);
+                    if (d.toString() === "Tue Nov 30   -1 00:00:00 GMT+0000 (GMT)") {
+                        return "Unknown";
+                    }
                     return _fullDateFormat(d);
                 }
 
