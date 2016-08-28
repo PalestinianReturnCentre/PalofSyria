@@ -1389,7 +1389,11 @@
             dataset.forEach(function(d, i) {
                 d.i = i;
                 var dayMonthFormat = d3.time.format("%d/%m/%y");
-                var fullDateFormat = d3.time.format("%A, %d %B %Y");
+                var _fullDateFormat = d3.time.format("%A, %d %B %Y");
+                var fullDateFormat = function(d) {
+                    console.log(d);
+                    return _fullDateFormat(d);
+                }
 
                 // Marker settings
                 d.marker = new L.circleMarker(new L.LatLng(d.latitude, d.longitude),{
