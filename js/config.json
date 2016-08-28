@@ -1,0 +1,14 @@
+{
+    "public_spreadsheet":"https://docs.google.com/spreadsheets/d/1XS6dQDFHXl3D6tmFYrDunOkQkXROSoZ5xIkThBZJYFE/pubhtml",
+    "script_url": "https://script.google.com/macros/s/AKfycbxE1s2jOydnueIMsQvj8Pjh1kHCccGf8HtkT0GArzs5juhSvVY/exec?par=",
+    "base_layers": [
+        {
+            "name": "Open Street Map",
+            "url": "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+        },
+        {
+            "name": "Satellite",
+            "url": "https://api.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoicGlldHJvOTEiLCJhIjoiY2lzNm5ybGhsMDAwMzJwbGpydWZmb3g2cyJ9.-3tnU7T0XrE99c5iClwFUQ"
+        }
+    ]
+}
